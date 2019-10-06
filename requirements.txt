@@ -1,0 +1,9 @@
+flask
+flask_restful
+opencv-python
+Pillow
+azure-storage-blob
+matplotlib
+numpy
+tensorflow==1.10.0
+keras==2.2.2
