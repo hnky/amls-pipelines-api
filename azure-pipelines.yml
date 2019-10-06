@@ -29,3 +29,10 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'python downloadmodel.py'
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'ACR-HBO'
+    repository: 'homerormargeapi'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
