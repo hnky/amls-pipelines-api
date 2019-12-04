@@ -9,7 +9,7 @@ cli_auth = AzureCliAuthentication()
 # Get workspace
 ws = Workspace.from_config(auth=cli_auth)
 
-model = Model(ws, 'mn.MargeOrHome')
+model = Model(ws, name='mn.MargeOrHomer',version=10)
 
 print("Name",model.name)
 print("Version",model.version)
